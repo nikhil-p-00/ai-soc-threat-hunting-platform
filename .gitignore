@@ -1,0 +1,12 @@
+# Project ignore 
+events.db 
+*.evtx 
+*.log 
+ai\model.joblib 
+venv/ 
+__pycache__/ 
+*.pyc 
+.env 
+*.exe 
+*.db 
+.DS_Store 

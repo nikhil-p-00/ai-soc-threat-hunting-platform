@@ -1,0 +1,107 @@
+/* dashboard/static/styles.css */
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa6b2;
+  --accent:#4cc9f0;
+  --high:#ff6b6b;
+  --susp:#ffb86b;
+  --ok:#9be15d;
+  --text:#e6eef6;
+}
+
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+body{margin:0;background:var(--bg);color:var(--text);padding:24px;}
+.container{max-width:1100px;margin:0 auto;}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;}
+header h1{font-size:20px;margin:0}
+.summary{display:flex;gap:12px;align-items:center;font-size:14px;color:var(--muted)}
+.summary .high{color:var(--high);font-weight:700}
+.summary .suspicious{color:var(--susp);font-weight:700}
+
+.alerts h2{margin:0 0 8px 0}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:8px;overflow:hidden}
+thead th{background:rgba(255,255,255,0.03);padding:12px;text-align:left;font-size:13px;color:var(--muted)}
+tbody td{padding:10px 12px;border-top:1px solid rgba(255,255,255,0.02);font-size:13px}
+td.high{color:var(--high);font-weight:700}
+td.suspicious{color:var(--susp);font-weight:700}
+footer{margin-top:14px;color:var(--muted);font-size:12px}
+/* --- Dashboard Enhancements (merge-safe) --- */
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 12px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#filter {
+  padding: 6px;
+  width: 320px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Severity Colors */
+.sev-high {
+  font-weight: 700;
+  color: #fff;
+  background: #d9534f;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.sev-suspicious {
+  font-weight: 700;
+  color: #fff;
+  background: #f0ad4e;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.sev-info {
+  font-weight: 600;
+  color: #fff;
+  background: #5bc0de;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Charts Layout */
+.charts {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  height: 180px;
+}
+
+.charts canvas {
+  flex: 1;
+}
