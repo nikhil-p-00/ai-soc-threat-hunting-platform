@@ -55,7 +55,9 @@ Threat Intelligence
 v
 SOC Dashboard
 (Flask UI)
+
 ✨ Features
+
 🔍 1. Sysmon Log Collection
 
 Reads Sysmon EVTX logs directly from
