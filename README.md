@@ -32,6 +32,7 @@ This project is designed to showcase skills in:
 - ✔ Dashboard Design  
 
 🧩 Architecture Diagram
+
 Windows Host (Sysmon)
 |
 v
