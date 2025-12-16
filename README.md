@@ -120,7 +120,7 @@ Example enriched alert:
 
 PowerShell suspicious command  
 ANOMALY score=0.053  
-VT: malicious=5 suspicious=2 | https://www.virustotal.com/gui/ip-address/xxx
+VT: malicious=5 suspicious=2 | 
 
 📊 5. SOC Dashboard
 
